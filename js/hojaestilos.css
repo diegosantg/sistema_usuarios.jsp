@@ -1,0 +1,866 @@
+@charset "utf-8";
+/* CSS Document */
+
+.usuario
+{
+  width:auto;
+  height:auto;
+  border-radius: 50%;	
+}
+
+div.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 200px;
+    width: 200px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+body {
+	background-color: #ccc;
+	background-image: url(../imagenes/fondo.gif);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center top;
+}
+
+.bordes {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+
+
+
+.boton
+{
+	color: #FFF;
+	background-color: #DD6A18;
+	border: 0px outset;
+	FONT-FAMILY: Calibri;
+	font-size: 12px;
+	FONT-WEIGHT: 700;
+	TEXT-DECORATION: none;
+	text-transform: uppercase;
+	width: 130px;
+	padding: 5px;
+	display: block;
+	text-align: center;
+	border: none;
+}
+
+.boton:disabled{
+	color: #FFFFFF;
+	background-color:#EEBB8D;
+	width: 130px;
+}
+
+
+
+
+
+
+.selBoton
+{
+	color: #FFF;
+	background-color: #E57829;
+	border: 0px outset;
+	FONT-FAMILY: Calibri;
+	font-size: 12px;
+	FONT-WEIGHT: 700;
+	TEXT-DECORATION: none;
+	text-transform: uppercase;
+	width: 130px;
+	padding: 5px;
+	display: block;
+	text-align: center;
+	border: none;
+}
+
+.captura
+{
+	color: #039;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.ayuda {
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	background-color: #FFC;
+	line-height: 25px;
+}
+
+.mensaje {
+	color: #F00;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.celda
+{
+	color: #666;
+	background-color: #FFA;
+}
+.celda1
+{
+	color: #FFFFFF;
+	background-color: #5A2900;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none;
+}
+
+.celdaEncabezado
+{
+	color: #000;
+	background-color: #d3634d;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+	letter-spacing: 1px;
+}
+
+.celdaEncabezadoChica
+{
+	color: #000;
+	background-color: #d3634d;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	text-align:center;
+	letter-spacing: 1px;
+}
+
+
+#menuv {
+	border: 0px;
+	border-width: 1px 1px 0 1px;
+	width: 96px;
+	font: 11px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#menuv ul, li {
+	list-style-type:none;
+}
+ 
+#menuv ul {
+	margin: 0;
+	padding: 0;
+}
+
+ 
+#menuv li {	
+	border-bottom: 0px solid #FFFFFF;
+}
+ 
+
+ 
+#menuv a {
+	text-decoration: none;
+	color: #555555;
+	background: #DDDDDD;
+	display: block;
+	padding: 3px 0px;
+	width: 96px;
+	}
+ 
+#menuv a:hover {
+	text-decoration: none;
+	color: #FFF;
+	padding-left: 0px;
+	background-color: #630;
+}
+
+.encTablas
+{
+	color: #FFFFFF;
+	background-color: #0096F7;
+	margin: 5pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 14px;
+	FONT-WEIGHT: bold;
+	LETTER-SPACING: 8px;
+	LINE-HEIGHT: 130%;
+
+
+	TEXT-DECORATION: none
+	text-align: center;
+	text-transform: uppercase;
+}
+.encTablasChica {
+	color: #FFFFFF;
+	background-color: #0096F7;
+	margin: 5pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	LETTER-SPACING: normal;
+	LINE-HEIGHT: 130%;
+
+
+	TEXT-DECORATION: none
+	text-align: center;
+	text-transform: none;
+	text-align: center;
+}
+
+
+.encTabla2
+{
+	color: #000000;
+	background-color: #6A9F47;
+	margin: 3pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	FONT-WEIGHT: bold;
+
+	TEXT-DECORATION: none
+	text-align: center;
+}
+
+
+.fondoPie {
+	background-color: #666;
+	color: #FFF;
+}
+fondoGris {
+	background-color: #999;
+}
+.grid {
+	background-color: #FFF;
+	border: thin solid #666;
+}
+
+.fuente
+{
+	color: #F90;
+	background-color: #CFC;
+	border: 0px outset;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none
+}
+.muestra {
+	color: #333333;
+	text-align:right;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	FONT-WEIGHT: bold;
+	
+
+	TEXT-DECORATION: none
+	text-align: justify;}
+
+
+
+
+.texto3 {
+	color: #060;
+}
+.textoGigante {
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+
+}
+
+
+.textoCeldas
+{
+	color: #000000;
+	background-color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.textoCeldasNegritas {
+	color: #000000;
+	background-color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+
+.textoCeldasPie
+{
+	color: #FFF;
+	background-color: #013567;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.textoCeldasmuestra {
+	color: #000;
+	background-color: #FFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 9px;
+	TEXT-DECORATION: none
+}
+
+.textoBotones {
+	color: #000;
+	background-color: #FFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+
+.textoCeldasRojo {
+	color: #F00;
+	background-color: #FFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none
+}
+
+.textoCeldasChicas {
+	color: #000;
+	background-color: #CACACA;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+}
+.textoCeldasChicasRoja {
+	color: #000;
+	background-color: #FFBFBF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+}
+.textoCeldasChicasAmarilla {
+	color: #000;
+	background-color: #FF9;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+}
+.textoCeldasChicasVerde {
+	color: #000;
+	background-color: #AEFFAE;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+}
+
+.textoCeldasChicas3 {
+	color: #000;
+	background-color: #CCC;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 9px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+}
+
+
+.textoCeldasChicas2 {
+	color: #000;
+	background-color: #FFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.textoCeldasChicas4 {
+	color: #000;
+	background-color: #FFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 9px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.textoCeldasChicas5 {
+	color: #000;
+	background-color: #0DD3F7;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.prueba {
+	background-color: #C5E0B4;
+}
+
+
+
+
+
+.textoCeldasTarifas1 {
+	color: #000;
+	background-color: #EAEAEA;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+}
+.textoCeldasTarifas2 {
+	color: #000;
+	background-color: #FFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+}
+
+
+
+.textoCeldasFondoAmarillo {
+	color: #000000;
+	background-color: #999;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none
+}
+.tablaCaptura {
+	background-color: #FFF;
+	border: thin solid #666;
+}
+.tablaTarifas {
+	background-color: #FFF;
+	border: thin solid #666;
+	font-size: 12px;
+}
+
+
+
+.tablaBotones {
+	background-color: #FFF;
+	border: thin solid #666;
+	color: #999;
+}
+
+
+
+.texto4 {
+	color: #184615;
+	font-weight: bold;
+}
+.texto5 {
+	color: #9C3;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+.texto7 {
+	font-size: 12px;
+	color: #000000;
+	background-color: #CF9;
+}
+.texto8 {font-size: 12px; color: #000000; }
+
+
+
+.titulo_1 {
+	font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 2px;
+}
+.TextoEncabezado
+{
+	color: #FFF;
+	background-color: #900;
+	margin: 3pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	FONT-SIZE: 14px;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none;
+	text-align: center;
+	border: none;
+	type:text;
+	size: 1;
+}
+
+.fecha
+{
+	color: #F90;
+	border: 1px none #225588;
+	background-color: #FFC;
+	margin: 1pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none
+	text-align;
+	text-align: right;
+	align : left;
+}
+
+.titulonoticia {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#000;
+} 
+.textonoticia { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; color:#333333; } 
+.masinformacion { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; color:#333333; }
+.fondoNoticia {
+	color: #000000;
+	background-color: #9CC;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	TEXT-DECORATION: none
+}
+
+
+.negritas {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo {
+	font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #036;
+	letter-spacing: 5px;
+	text-align:center;
+}
+
+.subtitulos {
+	font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #F90;
+	letter-spacing: 1px;
+} 
+	
+.textos {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #039;
+	text-align: justify;
+	font-weight: bold;
+	color: #FFF
+	text-align: center;
+	color: #FFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.tituloTablas{
+	color: #036;
+	background-color: #FFFFFF;
+	margin: 5pt;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	letter-spacing: 8px;
+	line-height: 130%;
+	text-align: center;
+}
+
+.tituloEncColumnas {
+	color: #333;
+	background-color: #FFCF88;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+	letter-spacing: 1px;
+}
+.celdaSeparadora {
+	background-color: #BE3B38;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+}
+
+.fondoRojo {
+	background-color: #F00;
+}
+
+.materiaLibre {
+	background-color: #FFF;
+	color: #000;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.salones {
+	background-color: #000;
+	color: #FFF;
+	font-size: 16px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+.areas {
+	background-color: #CCC;
+	color: #000;
+	font-size: 16px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.otroGrupo {
+	background-color: #000;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.otroGrupo2 {
+	background-color: #333;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.otroGrupoAjeno {
+	background-color: #F00;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.edificio1 {
+	background-color: #636;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.edificio2 {
+	background-color: #8C8CFF;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.edificio3 {
+	background-color: #696;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.edificio4 {
+	background-color: #C9C;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.edificio5 {
+	background-color: #099;
+	color: #FFF;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.edificio6 {	    background-color: #000;	    color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+
+.edificio7 {	    background-color: #000;	    color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+
+.edificio8 {	    background-color: #000;	    color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+
+.edificio9 {	    background-color: #000;	    color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+
+.edificio10 {	    background-color: #000;	    color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+
+
+
+
+.materia0 {	    background-color: #000;	    color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia1 {	background-color: #8A0000;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia2 {	background-color: #008000;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia3 {	background-color: #808000;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia4 {	background-color: #2055AC;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia5 {	background-color: #8064A2;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia6 {	background-color: #008080;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia7 {	background-color: #E46C0A;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia8 {	background-color: #804000;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .materia9 {	background-color: #9BBB59;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia10 {	background-color:    #663;	color: #000;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia11 {	background-color: #F0F;		color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia12 {	background-color: #0FF;		color: #000;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia13 {	background-color: #FF9797;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia14 {	background-color: #8AFF8A;	color: #000;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia15 {	background-color:    #030;	color: #000;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia16 {	background-color: #8C8CFF;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia17 {	background-color: #ACACAC;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia18 {	background-color: #232347;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia19 {	background-color: #DAA5D0;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia20 {	background-color: #800080;	color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.materia21 {	background-color:    #3F0;	color: #000;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.eliminar  {	background-color: #F00;		color: #FFF;	font-size: 11px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+
+
+.mate0 {	background-color: #000;	    color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;}
+ .mate1 {	background-color: #8A0000;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate2 {	background-color: #008000;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate3 {	background-color: #808000;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate4 {	background-color: #2055AC;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate5 {	background-color: #8064A2;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate6 {	background-color: #008080;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate7 {	background-color: #E46C0A;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate8 {	background-color: #804000;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+ .mate9 {	background-color: #9BBB59;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate10 {	background-color:    #663;	color: #000;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate11 {	background-color: #F0F;		color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate12 {	background-color: #0FF;		color: #000;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate13 {	background-color: #FF9797;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate14 {	background-color: #8AFF8A;	color: #000;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate15 {	background-color:    #030;	color: #000;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate16 {	background-color: #8C8CFF;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate17 {	background-color: #ACACAC;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate18 {	background-color: #232347;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate19 {	background-color: #DAA5D0;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate20 {	background-color: #800080;	color: #FFF;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+.mate21 {	background-color:    #3F0;	color: #000;	font-size: 10px;	font-family: Verdana, Arial, Helvetica, sans-serif;	text-align: center;}
+
+a          {    color: #000;    text-decoration: none;}
+a:visited  {	color: #000;	text-decoration: none;}
+a:hover    {	color: #000;	text-decoration: none;}
+a:active   {	color: #000;	text-decoration: none;}
+
+.liga      {	color: #000000;	text-decoration: none;		font-size: 12px;	font-style: normal;}
+
+.ligaGrande {
+	color: #000000;
+	text-decoration: underline;
+	font-size: 14px;
+	font-style: normal;
+}
+
+
+
+@media all and (min-width:100%) 
+{
+	body
+	{
+		align:center;
+		width:100%;
+		margin:auto;
+	}
+}
+
+img
+{
+max-width:100%;
+}
+
+
+
+#global {
+	height: 300px;
+	width: 200px;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+
+#mensajes {
+	height: auto;
+}
+
+.textoElemento {
+	padding:4px;
+	background:#fff;
+}
