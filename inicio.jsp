@@ -5,7 +5,7 @@
 <head>
     <meta charset="iso-8859-1">
     <title>ENERKOI GYM APP</title>
-   <link href="js/login.css" rel="stylesheet" type="text/css" />
+   <link href="js/inicio2.css" rel="stylesheet" type="text/css" />
 <link href="img/logo_enerkoi2.0.png" rel="shortcut icon" type="image/png" />
 </head>
 
@@ -18,7 +18,7 @@
     %>
 
     <div class="container">
-        <img src="img/logo_enerkoi2.0.png" alt="Logo del Sistema" class="logo">
+        <img src="img/image.png" alt="Logo del Sistema" class="logo">
           <h1>ENERKOI</h1>
             <p>Constante es mejor que Conforme</p>
         <div class="buttons">
@@ -28,6 +28,7 @@
             <form action="registro.jsp" method="get">
                 <button type="submit" class="btn">Registrarse</button>
             </form>
+            <a href="quienessomos.html" class="help">Que es ENERKOI?</a>
         </div>
     </div>
 </body>

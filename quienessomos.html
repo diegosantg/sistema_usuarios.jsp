@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Quiénes somos — FitRutinas</title>
+    <meta name="description" content="FitRutinas — aplicación de rutinas de ejercicios. Conoce nuestra misión, equipo y cómo te ayudamos a cumplir tus metas." />
+    <style>
+        :root{
+               --bg: #0b1020;
+    --card: #0f1726;
+    --muted: #9aa7bb;
+    --accent-1: #ff3b3b; /* aqua */
+    --accent-2: #b31217; /* green */
+    --accent-3: #ff6b6b; /* orange */
+    --glass: rgba(255, 255, 255, 0.05);
+    --radius: 16px;
+    --fw-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            font-family:var(--fw-sans);
+            background: linear-gradient(180deg,var(--bg) 0%, #071027 100%);
+            color:#eaf2f8;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            line-height:1.45;
+            padding:40px 24px;
+            display:flex;
+            justify-content:center;
+        }
+
+        .container{
+            width:100%;
+            max-width:var(--max-w);
+        }
+
+        header.hero{
+            background: linear-gradient(135deg, rgba(6,182,212,0.12), rgba(16,185,129,0.06));
+            border-radius:var(--radius);
+            padding:36px;
+            display:flex;
+            gap:28px;
+            align-items:center;
+            box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+            margin-bottom:28px;
+        }
+        .hero .intro{
+            flex:1;
+        }
+        .badge{
+            display:inline-flex;
+            gap:10px;
+            align-items:center;
+            background:linear-gradient(90deg,var(--accent-1),var(--accent-2));
+            color:white;
+            padding:6px 10px;
+            border-radius:999px;
+            font-weight:700;
+            font-size:13px;
+            box-shadow:0 6px 18px rgba(6,182,212,0.12);
+            margin-bottom:14px;
+            width:fit-content;
+        }
+        .hero h1{
+            margin:0 0 10px 0;
+            font-size:28px;
+            letter-spacing:-0.3px;
+        }
+        .lead{
+            color:var(--muted);
+            margin:0 0 18px 0;
+            max-width:64ch;
+        }
+        .hero .actions{
+            display:flex;
+            gap:12px;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+        .btn{
+            display:inline-flex;
+            align-items:center;
+            gap:10px;
+            padding:10px 14px;
+            border-radius:12px;
+            cursor:pointer;
+            border:1px solid rgba(255,255,255,0.06);
+            text-decoration:none;
+            color:white;
+            font-weight:600;
+            background:transparent;
+        }
+        .btn.primary{
+            background: linear-gradient(90deg,var(--accent-2),var(--accent-1));
+            box-shadow: 0 10px 30px rgba(6,182,212,0.08);
+        }
+        .hero-visual{
+            width:240px;
+            height:160px;
+            border-radius:12px;
+            background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border:1px solid rgba(255,255,255,0.03);
+        }
+        .visual-pill{
+            width:84%;
+            height:60%;
+            border-radius:999px;
+            background:linear-gradient(90deg,var(--accent-1),var(--accent-3));
+            box-shadow: 0 12px 30px rgba(15,23,42,0.6), inset 0 -6px 18px rgba(255,255,255,0.06);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-weight:800;
+            letter-spacing:1px;
+            color:white;
+        }
+
+        main{
+            display:grid;
+            gap:22px;
+        }
+
+        .grid{
+            display:grid;
+            gap:18px;
+        }
+
+        .features{
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            display:grid;
+        }
+        .card{
+            background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+            padding:18px;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,0.03);
+        }
+        .card h3{margin:0 0 8px 0}
+        .muted{color:var(--muted); font-size:14px}
+
+        .how{
+            display:flex;
+            gap:18px;
+            flex-wrap:wrap;
+            align-items:stretch;
+        }
+        .how .steps{
+            flex:1 1 420px;
+            display:grid;
+            gap:10px;
+        }
+        .step{
+            display:flex;
+            gap:14px;
+            align-items:flex-start;
+        }
+        .step .num{
+            min-width:40px;
+            height:40px;
+            border-radius:10px;
+            background:linear-gradient(90deg,var(--accent-1),var(--accent-2));
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            font-weight:700;
+            color:white;
+        }
+
+        .team{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+            gap:14px;
+            align-items:start;
+        }
+        .member{
+            display:flex;
+            gap:12px;
+            align-items:center;
+            background:var(--glass);
+            padding:12px;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,0.02);
+        }
+        .avatar{
+            width:56px;
+            height:56px;
+            border-radius:50%;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            font-weight:700;
+            font-size:18px;
+            flex-shrink:0;
+            background:linear-gradient(90deg,var(--accent-3),var(--accent-2));
+            box-shadow: 0 6px 18px rgba(15,23,42,0.6);
+        }
+
+        footer{
+            margin-top:6px;
+            color:var(--muted);
+            font-size:13px;
+            text-align:center;
+            padding:10px 6px;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width:760px){
+            .hero{flex-direction:column; align-items:flex-start}
+            .hero-visual{width:100%}
+            .visual-pill{height:56px}
+            body{padding:20px}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero" role="banner">
+            <div class="intro">
+                <div class="badge">ENERKOI</div>
+                <h1>Quiénes somos</h1>
+                <p class="lead">Somos una app dedicada a ayudarte a crear y seguir rutinas de ejercicio personalizadas con seguimiento sencillo, retos motivantes y planes adaptados a tu tiempo y objetivo.</p>
+                <div class="actions">
+                    <a class="btn primary" href="#mision">Nuestra misión</a>
+                    <a class="btn" href="#como-funciona">Cómo funciona</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="visual-pill">MUEVETE</div>
+            </div>
+        </header>
+
+        <main>
+            <section id="mision" class="card">
+                <h2 style="margin-top:0">Nuestra misión</h2>
+                <p class="muted">Crear hábitos saludables haciendo que el ejercicio sea simple, divertido y accesible. Combinamos rutinas estructuradas, recordatorios inteligentes y progresión adaptable para que avances sin complicaciones.</p>
+            </section>
+
+            <section class="features">
+                <div class="card">
+                    <h3>Rutinas personalizadas</h3>
+                    <p class="muted">Planes que se adaptan a tu nivel, preferencias y al tiempo que tengas disponible.</p>
+                </div>
+                <div class="card">
+                    <h3>Seguimiento claro</h3>
+                    <p class="muted">Mide progreso, marcas y rachas con métricas sencillas e intuitivas.</p>
+                </div>
+                <div class="card">
+                    <h3>Retos y comunidad</h3>
+                    <p class="muted">Únete a retos, comparte logros y encuentra apoyo para mantener la constancia.</p>
+                </div>
+            </section>
+
+            <section id="como-funciona" class="card how">
+                <div class="steps">
+                    <div class="step">
+                        <div class="num">1</div>
+                        <div>
+                            <strong>Cuéntanos tus metas</strong>
+                            <div class="muted">Objetivo, tiempo disponible y nivel inicial.</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="num">2</div>
+                        <div>
+                            <strong>Recibe una rutina</strong>
+                            <div class="muted">Plan sencillo con instrucciones y tiempos. Ajustes automáticos según tu progreso.</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="num">3</div>
+                        <div>
+                            <strong>Mantén la racha</strong>
+                            <div class="muted">Recordatorios, motivación y estadísticas para seguir avanzando.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="min-width:240px;">
+                    <h3 style="margin-top:0">Por qué funciona</h3>
+                    <p class="muted">Diseñamos la experiencia para reducir fricción: sesiones cortas, progresión automática y feedback claro para mantener la motivación.</p>
+                    <div style="margin-top:12px">
+                        <a class="btn primary" href="#equipo">Conoce al equipo</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="equipo" class="card">
+                <h2 style="margin-top:0">Nuestro equipo</h2>
+                <p class="muted">Un equipo pequeño y ágil formado por entrenadores, desarrolladores y diseñadores enfocados en crear experiencias que funcionan.</p>
+
+                <div class="team" style="margin-top:12px">
+                    <div class="member">
+                        <div class="avatar">AR</div>
+                        <div>
+                            <strong>Ana Rodríguez</strong><br>
+                            <span class="muted">Entrenadora / Fundadora</span>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="avatar" style="background:linear-gradient(90deg,var(--accent-1),var(--accent-3))">JM</div>
+                        <div>
+                            <strong>Juan Martínez</strong><br>
+                            <span class="muted">Desarrollo</span>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <div class="avatar" style="background:linear-gradient(90deg,var(--accent-2),var(--accent-1))">LC</div>
+                        <div>
+                            <strong>Lucía Camacho</strong><br>
+                            <span class="muted">Diseño UX</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" style="text-align:center;">
+                <h3 style="margin-top:0">¿Listo para empezar?</h3>
+                <p class="muted">Descarga la app o prueba una rutina gratuita desde el navegador. Empieza hoy y celebra cada paso.</p>
+                <div style="margin-top:12px">
+                    <a class="btn primary" href="#" aria-label="Comenzar ahora">Comenzar ahora</a>
+                    <a class="btn" href="#" aria-label="Ver demo">Ver demo</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © <strong>ENERKOI</strong> — Constante es mejor que Conforme
+        </footer>
+    </div>
+</body>
+</html>

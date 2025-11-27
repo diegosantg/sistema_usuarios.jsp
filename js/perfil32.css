@@ -1,0 +1,413 @@
+/* 🎨===== TEMA GLOBAL ENERKOI DARK =====*/
+:root {
+    --bg: #0b1020;
+    --card: #0f1726;
+    --muted: #9aa7bb;
+    --accent-1: #ff3b3b; /* red */
+    --accent-2: #b31217; /* dark red */
+    --accent-3: #ff6b6b; /* light red */
+    --glass: rgba(255, 255, 255, 0.05);
+    --radius: 16px;
+    --fw-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* ====== ESTILO GENERAL ====== */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", "Poppins", sans-serif;
+    background: linear-gradient(180deg, var(--bg) 0%, #071027 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.login-container.profile-container {
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    padding: 45px 60px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(2, 6, 23, 0.6);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in;
+    margin: 20px;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====== LOGO ====== */
+.logo {
+    width: 130px;
+    height: auto;
+    margin-bottom: 25px;
+    filter: 
+        drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4))
+        drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.05);
+    filter: 
+        drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4))
+        drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
+}
+
+/* ====== TÍTULO ====== */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* ====== GRUPOS DE FORMULARIO ====== */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group.half {
+    flex: 1;
+}
+
+/* ====== ETIQUETAS ====== */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.goal-label {
+    margin-bottom: 12px !important;
+    text-align: center;
+    font-size: 1rem !important;
+}
+
+/* ====== CAMPOS DE FORMULARIO ====== */
+select,
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+select:focus,
+input:focus {
+    border-color: var(--accent-1);
+    box-shadow: 0 0 0 2px rgba(255, 59, 59, 0.2);
+}
+
+/* Placeholder styling */
+::placeholder {
+    color: var(--muted) !important;
+    opacity: 0.7;
+}
+
+/* ====== CONTENEDOR DE OBJETIVOS ====== */
+.goals-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.goal-option {
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff !important;
+}
+
+.goal-option:hover {
+    border-color: var(--accent-1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 59, 59, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.goal-option.selected {
+    border-color: var(--accent-1);
+    background: linear-gradient(135deg, rgba(255, 59, 59, 0.15), rgba(179, 18, 23, 0.15));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 59, 59, 0.3);
+}
+
+.goal-option strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.goal-option span {
+    font-size: 0.8rem;
+    color: var(--muted) !important;
+    display: block;
+    line-height: 1.3;
+}
+
+/* ====== BOTÓN ENVIAR ====== */
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 59, 59, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 59, 59, 0.35);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* ====== ESTILOS PARA SELECT Y OPTIONS ====== */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239aa7bb'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 45px;
+}
+
+/* Estilos para las opciones del select */
+select option {
+    background: #0f1726 !important;
+    color: #fff !important;
+    padding: 10px;
+}
+
+/* ====== ESTILOS PARA VALIDACIÓN ====== */
+input:invalid,
+select:invalid {
+    border-color: #ff4444;
+}
+
+input:valid,
+select:valid {
+    border-color: var(--accent-1);
+}
+
+/* ====== MENSAJES DE ERROR ====== */
+.error-message {
+    color: #ff4444;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+}
+
+input:invalid + .error-message {
+    display: block;
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 768px) {
+    .login-container.profile-container {
+        padding: 35px 25px;
+        margin: 15px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .goals-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .goal-option {
+        padding: 12px;
+    }
+    
+    .logo {
+        width: 110px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container.profile-container {
+        padding: 25px 20px;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .subtitle {
+        font-size: 0.8rem;
+    }
+    
+    select,
+    input[type="number"],
+    input[type="text"],
+    input[type="date"] {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+    
+    .submit-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+/* ====== ESTILOS PARA CAMPOS ESPECÍFICOS ====== */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 0.6;
+}
+
+/* ====== EFECTO GLOW EN FOCUS ====== */
+select:focus,
+input:focus {
+    animation: glow 0.5s ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 0 4px rgba(255, 59, 59, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 59, 59, 0.2);
+    }
+}
+
+/* ====== SCROLLBAR PERSONALIZADO ====== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-2);
+}
+/* Estilos para subida de foto */
+.photo-upload-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.avatar-upload {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.avatar-upload:hover {
+    transform: scale(1.05);
+}
+
+.avatar-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(2, 6, 23, 0.6);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.avatar-initial {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.upload-text {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.upload-text span {
+    transition: color 0.3s ease;
+}
+
+.avatar-upload:hover .upload-text span {
+    color: var(--accent-1);
+}
